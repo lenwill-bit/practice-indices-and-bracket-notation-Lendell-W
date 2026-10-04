@@ -1,0 +1,52 @@
+// Task 1: Create the Library Array
+let libraryShelves = [
+  ["Norwegian Wood", "Kokoro", "No Longer Human"],             // shelf 1
+  ["Seven Samurai", "Spirited Away", "Tokyo Story"],           // shelf 2
+  ["Snow Country", "Godzilla", "Convenience Store Woman"]      // shelf 3
+];
+
+// Task 2: Log all elements using numbers
+console.log("===== Task 2: Using Numbers =====");
+console.log(`Shelf 1, Item 1: ${libraryShelves[0][0]}`);
+console.log(`Shelf 1, Item 2: ${libraryShelves[0][1]}`);
+console.log(`Shelf 1, Item 3: ${libraryShelves[0][2]}`);
+console.log(`Shelf 2, Item 1: ${libraryShelves[1][0]}`);
+console.log(`Shelf 2, Item 2: ${libraryShelves[1][1]}`);
+console.log(`Shelf 2, Item 3: ${libraryShelves[1][2]}`);
+console.log(`Shelf 3, Item 1: ${libraryShelves[2][0]}`);
+console.log(`Shelf 3, Item 2: ${libraryShelves[2][1]}`);
+console.log(`Shelf 3, Item 3: ${libraryShelves[2][2]}`);
+console.log("");
+
+// Task 3: Log all elements using variables
+console.log("===== Task 3: Using Variables =====");
+let row = 0;
+let item = 0;
+console.log(`Shelf 1, Item 1: ${libraryShelves[row][item]}`);
+item = 1;
+console.log(`Shelf 1, Item 2: ${libraryShelves[row][item]}`);
+item = 2;
+console.log(`Shelf 1, Item 3: ${libraryShelves[row][item]}`);
+
+row = 1;
+item = 0;
+console.log(`Shelf 2, Item 1: ${libraryShelves[row][item]}`);
+item = 1;
+console.log(`Shelf 2, Item 2: ${libraryShelves[row][item]}`);
+item = 2;
+console.log(`Shelf 2, Item 3: ${libraryShelves[row][item]}`);
+
+row = 2;
+item = 0;
+console.log(`Shelf 3, Item 1: ${libraryShelves[row][item]}`);
+item = 1;
+console.log(`Shelf 3, Item 2: ${libraryShelves[row][item]}`);
+item = 2;
+console.log(`Shelf 3, Item 3: ${libraryShelves[row][item]}`);
+console.log("");
+
+// Task 4: Loop through the second shelf
+console.log("===== Task 4: Second Shelf =====");
+for (let i = 0; i < libraryShelves[1].length; i++) {
+  console.log(`Item ${i + 1}: ${libraryShelves[1][i]}`);
+}
